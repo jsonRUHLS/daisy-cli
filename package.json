@@ -1,0 +1,63 @@
+{
+  "name": "daisy-cli",
+  "version": "0.0.0",
+  "description": "Generate all the recommended markdown documentation/templates (pre-filled) for the Github community standards",
+  "main": "./lib/index.js",
+  "bin": {
+    "daisy-cli": "./bin/index.js"
+  },
+  "scripts": {
+    "start": "npm run build && npm run global",
+    "build": "npm run clean:some && tsc -p .",
+    "global": "npm i -g && daisy-cli",
+    "clean:some": "rm -rf ./lib ./docs",
+    "clean:all": "rm -rf ./node_modules ./package-lock.json ./lib ./docs",
+    "refresh": "npm run clean:all && npm install",
+    "tscov": "tscov --min-coverage 90",
+    "tscov:d": "tscov --details",
+    "publish-package": "npm run build && npm publish",
+    "docs": "typedoc --out docs ./src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngdaisy/daisy-cli.git"
+  },
+  "keywords": [
+    "cli",
+    "daisy",
+    "typescript"
+  ],
+  "author": {
+    "name": "Jason Ruhlin",
+    "email": "jsonruhls@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ngdaisy/daisy-cli/issues"
+  },
+  "homepage": "https://github.com/ngdaisy/daisy-cli#readme",
+  "dependencies": {
+    "@types/fs-extra": "^8.0.0",
+    "chalk": "^2.4.2",
+    "clear": "^0.1.0",
+    "commander": "^2.20.0",
+    "figlet": "^1.2.3",
+    "fs-extra": "^8.1.0",
+    "inquirer": "^6.5.0",
+    "inversify": "^5.0.1",
+    "kleur": "^3.0.3",
+    "path": "^0.12.7",
+    "reflect-metadata": "^0.1.13",
+    "tslib": "^1.10.0"
+  },
+  "devDependencies": {
+    "@liftr/tscov": "^1.4.1",
+    "@types/figlet": "^1.2.0",
+    "@types/inquirer": "^6.5.0",
+    "@types/node": "^12.7.0",
+    "nodemon": "^1.19.1",
+    "ts-node": "^8.3.0",
+    "typedoc": "^0.15.0",
+    "typescript": "^3.5.3"
+  }
+}
