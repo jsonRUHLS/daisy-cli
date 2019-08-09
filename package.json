@@ -1,10 +1,10 @@
 {
   "name": "daisy-cli",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Generate all the recommended markdown documentation/templates (pre-filled) for the Github community standards",
   "main": "./lib/index.js",
   "bin": {
-    "daisy-cli": "./bin/daisy-cli"
+    "daisy-cli": "bin/daisy-cli"
   },
   "scripts": {
     "start": "npm run build && npm run global",
