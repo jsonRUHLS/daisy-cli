@@ -1,6 +1,6 @@
 {
   "name": "daisy-cli",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "Generate all the recommended markdown documentation/templates (pre-filled) for the Github community standards",
   "main": "./lib/index.js",
   "bin": {

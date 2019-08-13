@@ -1,6 +1,6 @@
 const octokit     = require('@octokit/rest')();
 const Configstore = require('configstore');
-const pkg         = require('../package.json');
+const pkg         = require('../../package.json');
 const _           = require('lodash');
 const CLI         = require('clui');
 const Spinner     = CLI.Spinner;
