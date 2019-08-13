@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { injectable, inject } from 'inversify';
 import { Logger } from './utils/logger.util';
 import { CodeOfConduct, Contributing, License, ToDo, Readme, Changelog } from './templates/universal';
