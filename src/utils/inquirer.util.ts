@@ -1,5 +1,5 @@
 const inquire   = require('inquirer');
-const files    = require('./files');
+const files    = require('./files.util');
 
 module.exports = {
 
