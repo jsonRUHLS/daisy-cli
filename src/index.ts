@@ -20,7 +20,7 @@ export function index(): DaisyCLI {
   const clear = require('clear');
   const figlet = require('figlet');
 
-  const github = require('./utils/github-util');
+  const github = require('./utils/github.util');
   const repo = require('./utils/repo.util');
   const files = require('./utils/files.util');
 
