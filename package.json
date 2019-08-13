@@ -1,6 +1,6 @@
 {
   "name": "daisy-cli",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Generate all the recommended markdown documentation/templates (pre-filled) for the Github community standards",
   "main": "./lib/index.js",
   "bin": {
@@ -25,7 +25,8 @@
   "keywords": [
     "cli",
     "daisy",
-    "typescript"
+    "typescript",
+    "Git"
   ],
   "author": {
     "name": "Jason Ruhlin",
@@ -37,17 +38,24 @@
   },
   "homepage": "https://github.com/ngdaisy/daisy-cli#readme",
   "dependencies": {
+    "@octokit/rest": "^16.28.7",
     "@types/fs-extra": "^8.0.0",
     "chalk": "^2.4.2",
     "clear": "^0.1.0",
+    "clui": "^0.3.6",
     "commander": "^2.20.0",
+    "configstore": "^5.0.0",
     "figlet": "^1.2.3",
     "fs-extra": "^8.1.0",
     "inquirer": "^6.5.0",
     "inversify": "^5.0.1",
     "kleur": "^3.0.3",
+    "lodash": "^4.17.15",
+    "minimist": "^1.2.0",
     "path": "^0.12.7",
     "reflect-metadata": "^0.1.13",
+    "simple-git": "^1.124.0",
+    "touch": "^3.1.0",
     "tslib": "^1.10.0"
   },
   "devDependencies": {

@@ -70,3 +70,8 @@ export class DaisyCLI {
         }
     }
 }
+
+@injectable()
+export class InitGit {
+    
+}
