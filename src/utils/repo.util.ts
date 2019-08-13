@@ -5,8 +5,8 @@ const CLI         = require('clui')
 const Spinner     = CLI.Spinner;
 const touch       = require('touch');
 
-const inquirer    = require('./inquirer');
-const gh          = require('./github');
+const inquirer    = require('./inquirer.util');
+const gh          = require('./github.util');
 
 module.exports = {
 

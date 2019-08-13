@@ -6,7 +6,7 @@ const CLI         = require('clui');
 const Spinner     = CLI.Spinner;
 const chalk       = require('chalk');
 
-const inquirer    = require('./inquirer');
+const inquirer    = require('./inquirer.util');
 
 const conf = new Configstore(pkg.name);
 
